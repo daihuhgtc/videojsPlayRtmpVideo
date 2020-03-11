@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link href="videoN/videojs/video-js.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div style="position: absolute;top:0;left:0;width:600px;height:600px;z-index: 500">
+            <video style="width:600px;height:600px;" id="video111" data-setup="{}" preload='none' controls class="video-js vjs-big-play-centered"></video>
+        </div>
+    </body>
+   
+</html>
+
+<script src="videoN/videojs/video.min.js"></script>
+<script src="videoN/videojsplaylist/videojs-playlist.min.js"></script>
+<script src="videoN/videoflash/videojs-flash.js"></script> 
+<script src="jquery.min.js"></script>
+<script>
+     video111 = videojs('video111', {
+        inactivityTimeout: 0
+    });
+   
+    video111.src({type: "rtmp/flv", src: "rtmp://58.200.131.2:1935/livetv/hunantv"});
+</script>
